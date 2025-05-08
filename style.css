@@ -1,0 +1,300 @@
+/* إعداد الخط */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* الحاوية العامة */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px; /* تقليل الحشو داخل الحاوية */
+}
+
+/* الهيدر */
+.header {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.9), 
+    rgba(255, 255, 255, 0.6)
+  ),
+  url('cosmetologist-doing-face-treatment-applying-face-mask_926199-2066746.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: #b03e94;
+  text-align: center;
+
+  height: 100vh; /* ارتفاع العنصر بالكامل = ارتفاع الشاشة */
+  width: 100%;    /* تملأ العرض كله */
+  margin: 0;      /* مفيش فواصل خارجية */
+  padding: 0;     /* نلغي البادينج اللي كان كبير */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 5px solid #f3d6ec;
+}
+
+
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* زر واتساب */
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05); /* تكبير الزر عند المرور عليه */
+}
+
+/* العناوين */
+h2 {
+  color: #b03e94;
+  margin-top: 30px; /* تقليل المسافة العلوية */
+  margin-bottom: 10px; /* تقليل المسافة السفلية */
+  border-bottom: 2px solid #f3d6ec;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* فقرة عن الدكتورة */
+.about p {
+  font-size: 1.1em;
+  background-color: #fdf1f8;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* الخدمات */
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff5fb;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(176, 62, 148, 0.1);
+}
+
+.services-list li {
+  background-color: #fdf1f8;
+  color: #b03e94;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  font-size: 1.1em; /* زيادة حجم الخط */
+  font-weight: bold;
+  border: 1px solid #f3d6ec;
+}
+
+/* النصائح */
+.tips ul {
+  list-style-type: square;
+  padding-right: 20px;
+}
+
+.tips li {
+  margin-bottom: 10px;
+}
+
+/* معرض قبل وبعد */
+.before-after .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.ba-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.before-after .ba-img:hover {
+  transform: scale(1.05); /* تكبير الصورة عند المرور عليها */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+}
+
+/* الفوتر */
+.footer {
+  background-color: #fdf1f8;
+  color: #6a2e5b;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  font-size: 0.95em;
+}
+
+.footer a {
+  color: #b03e94;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* قسم الأسئلة */
+.faq-section {
+  background-color: #fff5fb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(176, 62, 148, 0.1);
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f3d6ec;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #b03e94;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f3d6ec; /* تغيير لون الخلفية عند المرور */
+  transform: scale(1.05); /* تكبير السؤال عند المرور عليه */
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: #ffffff;
+  padding: 0 10px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.arrow {
+  float: left;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+/* التنسيق المتجاوب */
+@media (max-width: 992px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .whatsapp-button {
+    font-size: 1em;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-list li {
+    font-size: 1em;
+    padding: 10px 12px;
+  }
+
+  .faq-question {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.7em;
+  }
+
+  .header p {
+    font-size: 0.95em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .services-list li {
+    font-size: 0.95em;
+    padding: 8px 10px;
+  }
+
+  .faq-question {
+    font-size: 0.95em;
+  }
+
+  .faq-answer {
+    font-size: 0.9em;
+  }
+
+  .footer {
+    font-size: 0.85em;
+  }
+}
+
+
+
+
+
+
+/* الأنيميشن */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
