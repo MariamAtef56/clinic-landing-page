@@ -44,11 +44,9 @@ body {
   border-bottom: 5px solid #f3d6ec;
 }
 
-
-
 .header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 2.6em;
+  margin-bottom: 20px;
 }
 
 .header p {
@@ -171,7 +169,7 @@ h2 {
 }
 
 .faq-item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #f3d6ec;
 }
 
@@ -180,9 +178,10 @@ h2 {
   border: none;
   width: 100%;
   text-align: right;
-  padding: 10px;
-  font-size: 1.1em;
-  font-weight: bold;
+  padding: 15px;
+  font-size: 105px; /* زيادة حجم الخط في الأسئلة */
+  font-weight: bold; /* جعل السؤال Bold */
+  font-family: 'cairo', sans-serif; /* تغيير نوع الخط */
   color: #b03e94;
   cursor: pointer;
   position: relative;
@@ -200,12 +199,13 @@ h2 {
   transition: max-height 0.4s ease, padding 0.4s ease;
   background-color: #ffffff;
   padding: 0 10px;
-  font-size: 0.95em;
+  font-size: 30px; /* زيادة حجم الخط للإجابة */
+  font-family: 'cairo', sans-serif; /* تغيير نوع الخط */
   color: #333;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 300px;
   padding: 10px;
 }
 
@@ -219,10 +219,26 @@ h2 {
 }
 
 /* التنسيق المتجاوب */
-@media (max-width: 992px) {
-  .header h1 {
-    font-size: 2em;
+@media (max-width: 200px) {
+  .faq-question {
+    font-size: 50px; /* تغيير الحجم هنا للتناسب مع الشاشات المتوسطة */
   }
+
+  .faq-answer {
+    font-size: 30px; /* تعديل حجم الخط في الإجابات */
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-question {
+    font-size: 20px; /* تغيير الحجم في الشاشات الصغيرة */
+  }
+
+  .faq-answer {
+    font-size: 16px; /* تغيير حجم الخط في الشاشات الصغيرة */
+  }
+}
+
 
   .header p {
     font-size: 1em;
@@ -242,14 +258,18 @@ h2 {
   }
 
   .faq-question {
-    font-size: 1em;
+    font-size: 18px; /* حافظنا على الحجم الثابت هنا */
+  }
+
+  .faq-answer {
+    font-size: 16px; /* نفس الشيء هنا */
   }
 
   .container {
     width: 95%;
     padding: 10px;
   }
-}
+
 
 @media (max-width: 600px) {
   .header h1 {
@@ -270,22 +290,17 @@ h2 {
   }
 
   .faq-question {
-    font-size: 0.95em;
+    font-size: 16px; /* الحفاظ على حجم ثابت */
   }
 
   .faq-answer {
-    font-size: 0.9em;
+    font-size: 14px;
   }
 
   .footer {
     font-size: 0.85em;
   }
 }
-
-
-
-
-
 
 /* الأنيميشن */
 .fade-in {
