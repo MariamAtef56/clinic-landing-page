@@ -1,4 +1,4 @@
-/* إعداد الخط */
+
 body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
@@ -13,13 +13,13 @@ body {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  padding: 15px; /* تقليل الحشو داخل الحاوية */
+  padding: 15px;
 }
 
 /* الهيدر */
 .header {
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.9), 
+    rgba(255, 255, 255, 0.9),
     rgba(255, 255, 255, 0.6)
   ),
   url('cosmetologist-doing-face-treatment-applying-face-mask_926199-2066746.jpg');
@@ -27,20 +27,16 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-
   color: #b03e94;
   text-align: center;
-
-  height: 100vh; /* ارتفاع العنصر بالكامل = ارتفاع الشاشة */
-  width: 100%;    /* تملأ العرض كله */
-  margin: 0;      /* مفيش فواصل خارجية */
-  padding: 0;     /* نلغي البادينج اللي كان كبير */
-  
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   border-bottom: 5px solid #f3d6ec;
 }
 
@@ -50,31 +46,16 @@ body {
 }
 
 .header p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
-/* زر واتساب */
-.whatsapp-button {
-  background-color: #25D366;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  background-color: #1ebe5d;
-  transform: scale(1.05); /* تكبير الزر عند المرور عليه */
-}
 
 /* العناوين */
 h2 {
   color: #b03e94;
-  margin-top: 30px; /* تقليل المسافة العلوية */
-  margin-bottom: 10px; /* تقليل المسافة السفلية */
+  margin-top: 30px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #f3d6ec;
   display: inline-block;
   padding-bottom: 5px;
@@ -83,7 +64,7 @@ h2 {
 /* فقرة عن الدكتورة */
 .about p {
   font-size: 1.1em;
-  background-color: #fdf1f8;
+  background-color: #f8eff4;
   padding: 20px;
   border-radius: 15px;
 }
@@ -93,7 +74,7 @@ h2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #fff5fb;
+  background-color: #f8eff4;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(176, 62, 148, 0.1);
@@ -105,7 +86,7 @@ h2 {
   padding: 12px 16px;
   margin-bottom: 8px;
   border-radius: 10px;
-  font-size: 1.1em; /* زيادة حجم الخط */
+  font-size: 1.1em;
   font-weight: bold;
   border: 1px solid #f3d6ec;
 }
@@ -136,13 +117,13 @@ h2 {
 }
 
 .before-after .ba-img:hover {
-  transform: scale(1.05); /* تكبير الصورة عند المرور عليها */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* الفوتر */
 .footer {
-  background-color: #fdf1f8;
+  background-color: #f8eff4;
   color: #6a2e5b;
   text-align: center;
   padding: 30px 20px;
@@ -162,7 +143,7 @@ h2 {
 
 /* قسم الأسئلة */
 .faq-section {
-  background-color: #fff5fb;
+  background-color: #f8eff4;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(176, 62, 148, 0.1);
@@ -179,18 +160,18 @@ h2 {
   width: 100%;
   text-align: right;
   padding: 15px;
-  font-size: 105px; /* زيادة حجم الخط في الأسئلة */
-  font-weight: bold; /* جعل السؤال Bold */
-  font-family: 'cairo', sans-serif; /* تغيير نوع الخط */
-  color: #b03e94;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Cairo', sans-serif;
+  color:#b03e94;
   cursor: pointer;
   position: relative;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .faq-question:hover {
-  background-color: #f3d6ec; /* تغيير لون الخلفية عند المرور */
-  transform: scale(1.05); /* تكبير السؤال عند المرور عليه */
+  background-color: #f3d6ec;
+  transform: scale(1.05);
 }
 
 .faq-answer {
@@ -199,8 +180,8 @@ h2 {
   transition: max-height 0.4s ease, padding 0.4s ease;
   background-color: #ffffff;
   padding: 0 10px;
-  font-size: 30px; /* زيادة حجم الخط للإجابة */
-  font-family: 'cairo', sans-serif; /* تغيير نوع الخط */
+  font-size: 30px;
+  font-family: 'Cairo', sans-serif;
   color: #333;
 }
 
@@ -221,57 +202,23 @@ h2 {
 /* التنسيق المتجاوب */
 @media (max-width: 200px) {
   .faq-question {
-    font-size: 50px; /* تغيير الحجم هنا للتناسب مع الشاشات المتوسطة */
+    font-size: 50px;
   }
 
   .faq-answer {
-    font-size: 30px; /* تعديل حجم الخط في الإجابات */
+    font-size: 30px;
   }
 }
 
 @media (max-width: 600px) {
   .faq-question {
-    font-size: 20px; /* تغيير الحجم في الشاشات الصغيرة */
+    font-size: 16px;
   }
 
   .faq-answer {
-    font-size: 16px; /* تغيير حجم الخط في الشاشات الصغيرة */
-  }
-}
-
-
-  .header p {
-    font-size: 1em;
+    font-size: 14px;
   }
 
-  .whatsapp-button {
-    font-size: 1em;
-    padding: 10px 20px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .services-list li {
-    font-size: 1em;
-    padding: 10px 12px;
-  }
-
-  .faq-question {
-    font-size: 18px; /* حافظنا على الحجم الثابت هنا */
-  }
-
-  .faq-answer {
-    font-size: 16px; /* نفس الشيء هنا */
-  }
-
-  .container {
-    width: 95%;
-    padding: 10px;
-  }
-
-
-@media (max-width: 600px) {
   .header h1 {
     font-size: 1.7em;
   }
@@ -289,17 +236,15 @@ h2 {
     padding: 8px 10px;
   }
 
-  .faq-question {
-    font-size: 16px; /* الحفاظ على حجم ثابت */
-  }
-
-  .faq-answer {
-    font-size: 14px;
-  }
-
   .footer {
     font-size: 0.85em;
   }
+}
+
+
+.container {
+  width: 95%;
+  padding: 10px;
 }
 
 /* الأنيميشن */
